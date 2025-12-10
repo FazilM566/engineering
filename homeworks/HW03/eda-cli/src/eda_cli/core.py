@@ -185,9 +185,30 @@ def compute_quality_flags(summary: DatasetSummary, missing_df: pd.DataFrame) -> 
     flags["max_missing_share"] = max_missing_share
     flags["too_many_missing"] = max_missing_share > 0.5
 
+    k = []
+    for i in summary.columns:
+        if i.unique == 1 and i.non_null > 0:
+            k.append(i)
+
+    flags["has_constant_columns"] = len(k) > 0
+    flags["constant_columns_count"] = len(k)
+
+    high_card_cols = []
+    for col in summary.columns:
+        if not col.is_numeric and col.unique > 100:
+            high_card_cols.append(col.name)
+
+    flags["has_high_cardinality_categoricals"] = len(high_card_cols) > 0
+    flags["high_cardinality_categoricals_count"] = len(high_card_cols)
+
+
     # Простейший «скор» качества
     score = 1.0
     score -= max_missing_share  # чем больше пропусков, тем хуже
+    if len(k) > 1:
+        score -= 0.2
+    if len(high_card_cols) > 1:
+        score -= 0.1
     if summary.n_rows < 100:
         score -= 0.2
     if summary.n_cols > 100:

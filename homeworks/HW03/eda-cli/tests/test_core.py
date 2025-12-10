@@ -21,6 +21,16 @@ def _sample_df() -> pd.DataFrame:
         }
     )
 
+def my_sample_df() -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "age": [10+i*0 for i in range(150)],
+            "height": [140 + i for i in range(150)],
+            "high_card": [f"id_{i}" for i in range(150)],
+        }
+    )
+
+
 
 def test_summarize_dataset_basic():
     df = _sample_df()
@@ -59,3 +69,13 @@ def test_correlation_and_top_categories():
     city_table = top_cats["city"]
     assert "value" in city_table.columns
     assert len(city_table) <= 2
+def test_my_flags():
+    df = my_sample_df()
+    summary = summarize_dataset(df)
+    missing_df = missing_table(df)
+    flags = compute_quality_flags(summary, missing_df)
+    assert "has_constant_columns" in flags
+    assert "has_high_cardinality_categoricals" in flags
+
+    assert flags["has_constant_columns"] == True
+    assert flags["has_high_cardinality_categoricals"] == True
