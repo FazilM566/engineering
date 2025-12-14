@@ -242,3 +242,40 @@ async def quality_from_csv(file: UploadFile = File(...)) -> QualityResponse:
         flags=flags_bool,
         dataset_shape={"n_rows": n_rows, "n_cols": n_cols},
     )
+
+@app.post(
+    "/quality-flags-from-csv",
+    tags=["quality"],
+    summary="Возвращает полный набор флагов качества из CSV-файла",
+    response_description="Словарь булевых флагов качества данных"
+)
+async def quality_from_csv(file: UploadFile = File(...)) -> dict:
+    """
+    Эндпоинт, который принимает CSV-файл и
+возвращает флаги качества
+
+    """
+
+    if file.content_type not in ("text/csv", "application/vnd.ms-excel", "application/octet-stream"):
+        raise HTTPException(status_code=400, detail="Ожидается CSV-файл (content-type text/csv).")
+
+    try:
+        df = pd.read_csv(file.file)
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=400, detail=f"Не удалось прочитать CSV: {exc}")
+
+    if df.empty:
+        raise HTTPException(status_code=400, detail="CSV-файл не содержит данных (пустой DataFrame).")
+
+
+    sum = summarize_dataset(df)
+    ms = missing_table(df)
+    flags = compute_quality_flags(sum, ms)
+
+    flags_bool: dict[str, bool] = {
+        key: bool(value)
+        for key, value in flags.items()
+        if isinstance(value, bool)
+    }
+
+    return {"flags": flags_bool}
