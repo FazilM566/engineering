@@ -1,0 +1,9 @@
+{
+  "best_model_label": "HistGradientBoosting",
+  "parametrs_best": "ROC-AUC",
+  "test_metrics": {
+    "Accuracy": 0.9180555555555555,
+    "F1": 0.8358375069560379,
+    "ROC-AUC": 0.9294122101655058
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "LogisticRegression": {
+    "best_params": {
+      "logreg__C": 1000.0
+    },
+    "best_cv_roc_auc": 0.7941894419158256
+  },
+  "tree_reg": {
+    "best_params": {
+      "ccp_alpha": 0.0,
+      "max_depth": null,
+      "min_samples_leaf": 40
+    },
+    "best_cv_roc_auc": 0.8372949974487203
+  },
+  "RandomForest": {
+    "best_params": {
+      "min_samples_leaf": 1
+    },
+    "best_cv_roc_auc": 0.9299941060055474
+  },
+  "HistGradientBoosting": {
+    "best_params": {
+      "learning_rate": 0.15,
+      "max_depth": 6
+    },
+    "best_cv_roc_auc": 0.9262583708850556
+  }
+}
