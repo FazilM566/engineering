@@ -1,9 +1,4 @@
 {
-  "metadata": {
-    "experiment_name": "HW06",
-    "created_at": "19-01-2026",
-    "author": "Меликов Фазиль"
-  },
   "test_metrics_for_models": {
     "baseline": {
       "Accuracy": 0.7375,
