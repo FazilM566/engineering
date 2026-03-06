@@ -46,11 +46,11 @@
 
 Ссылки на файлы в репозитории:
 
-- Таблица результатов: `./artifacts/runs.csv`
-- Лучшая модель: `./artifacts/best_model.pt`
-- Конфиг лучшей модели: `./artifacts/best_config.json`
-- Кривые лучшего прогона: `./artifacts/figures/curves_best.png`
-- Кривые “плохих LR”: `./artifacts/figures/curves_lr_extremes.png`
+- Таблица результатов: [./artifacts/runs.csv](./artifacts/runs.csv)
+- Лучшая модель: [./artifacts/best_model.pt](./artifacts/best_model.pt)
+- Конфиг лучшей модели: [./artifacts/best_config.json](./artifacts/best_config.json)
+- Кривые лучшего прогона: [./artifacts/figures/curves_best.png](./artifacts/figures/curves_best.png)
+- Кривые “плохих LR”: [./artifacts/figures/curves_lr_extremes.png](./artifacts/figures/curves_lr_extremes.png)
 
 Короткая сводка (5-9 строк):
 
