@@ -1,0 +1,26 @@
+{
+  "архитектура": {
+    "input_dim": 784,
+    "hidden_dims": [
+      1024,
+      512,
+      256,
+      128
+    ],
+    "num_classes": 47,
+    "activation": "relu"
+  },
+  "гиперпараметры": {
+    "dropout_p": 0.3,
+    "use_batchnorm": true,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "loss_function": "CrossEntropyLoss",
+    "use_EarlyStopping": {
+      "patience": 4,
+      "min_delta": 0.0005
+    }
+  },
+  "seed": 42,
+  "датасет": "EMNIST"
+}
