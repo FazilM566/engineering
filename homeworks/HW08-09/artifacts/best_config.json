@@ -1,5 +1,5 @@
 {
-  "архитектура": {
+  "architecture": {
     "input_dim": 784,
     "hidden_dims": [
       1024,
@@ -10,7 +10,7 @@
     "num_classes": 47,
     "activation": "relu"
   },
-  "гиперпараметры": {
+  "hyperparameters": {
     "dropout_p": 0.3,
     "use_batchnorm": true,
     "learning_rate": 0.001,
@@ -22,5 +22,5 @@
     }
   },
   "seed": 42,
-  "датасет": "EMNIST"
+  "dataset": "EMNIST"
 }
