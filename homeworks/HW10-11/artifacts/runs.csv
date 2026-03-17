@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,CIFAR-100,42,"SimpleCNN (3 conv layers, 2 fc)",Adam,0.001,15.0,0.4012,,,,,Baseline without augmentation
+C2,classification,CIFAR-100,42,"SimpleCNN (3 conv layers, 2 fc)",Adam,0.001,15.0,0.4171,,,,,With augmentation (RandomCrop+HorizontalFlip)
+C3,classification,CIFAR-100,42,"ResNet18 pretrained on ImageNet, head-only training",Adam,0.001,10.0,0.458,,,,,Transfer learning: only fc layer trained
+C4,classification,CIFAR-100,42,"ResNet18 pretrained on ImageNet, fine-tuned layer4+fc",Adam,"1e-4 (layer4), 1e-3 (fc)",10.0,0.561,0.58,,,,Fine-tuning layer4+fc
+V1,detection,Pascal VOC,42,FasterRCNN_ResNet50_FPN,,,,,,0.275,0.999,0.897,min score_thr(0.3 )
+V2,detection,Pascal VOC,42,FasterRCNN_ResNet50_FPN,,,,,,0.444,0.947,0.894,mean score_thr(0.7)

@@ -1,0 +1,36 @@
+{
+  "architecture": {
+    "name": "ResNet18",
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "backbone": {
+      "type": "resnet18",
+      "frozen_layers": [
+        "conv1",
+        "layer1",
+        "layer2",
+        "layer3"
+      ],
+      "trainable_layers": [
+        "layer4"
+      ]
+    },
+    "classifier": {
+      "type": "linear",
+      "input_dim": 512,
+      "num_classes": 100,
+      "trainable": true
+    },
+    "pretrained": true
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "optimizer": "Adam",
+    "loss_function": "CrossEntropyLoss"
+  },
+  "seed": 42,
+  "dataset": "CIFAR100"
+}
