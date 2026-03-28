@@ -26,10 +26,57 @@
     },
     "pretrained": true
   },
+  "transforms": {
+    "train": [
+      "RandomResizedCrop(224, scale=(0.7, 1.0))",
+      "RandomHorizontalFlip(p=0.5)"
+    ],
+    "test": [
+      "CenterCrop(224)"
+    ]
+  },
+  "preprocess": {
+    "resize": "Resize(256)",
+    "to_tensor": "ToTensor()",
+    "normalize": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    }
+  },
+  "augmentation": {
+    "random_resized_crop": {
+      "size": 224,
+      "scale": [
+        0.7,
+        1.0
+      ]
+    },
+    "random_horizontal_flip": {
+      "probability": 0.5
+    }
+  },
   "hyperparameters": {
-    "learning_rate": 0.0001,
+    "learning_rate": {
+      "head_only_phase": {
+        "fc": 0.001
+      },
+      "fine_tune_phase": {
+        "layer4": 0.0001,
+        "fc": 0.001
+      }
+    },
     "optimizer": "Adam",
-    "loss_function": "CrossEntropyLoss"
+    "loss_function": "CrossEntropyLoss",
+    "weight_decay": 0.0001,
+    "batch_size": 64
   },
   "seed": 42,
   "dataset": "CIFAR100"
