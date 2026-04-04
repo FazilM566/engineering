@@ -1,0 +1,21 @@
+query_id,query,before_expected_source_doc_ids,before_retrieved_sources_doc_ids,before_hit_at_3,before_recall@3,before_MRR@3,before_rank_of_first_relevant,after_expected_source_doc_ids,after_retrieved_sources_doc_ids,after_hit_at_3,after_recall@3,after_MRR@3,after_rank_of_first_relevant,changed
+q01,How did Manchester United beat Everton in the FA Cup?,0,"6, 0",1.0,1.0,0.5,2.0,0,"6, 0",1,1.0,0.5,2,False
+q02,When will Ruud van Nistelrooy return from his Achilles injury?,1,"1, 19",1.0,1.0,1.0,1.0,1,"1, 19",1,1.0,1.0,1,False
+q03,Why did David Moyes change his mind about James Beattie's red card for headbutting?,2,2,1.0,1.0,1.0,1.0,2,2,1,1.0,1.0,1,False
+q04,What did Cristiano Ronaldo say about his new contract at Manchester United?,3,"3, 17",1.0,1.0,1.0,1.0,3,"3, 17",1,1.0,1.0,1,False
+q05,Why does Walter Smith want to bring back the Home International series?,4,"4, 24",1.0,1.0,1.0,1.0,4,"4, 33",1,1.0,1.0,1,True
+q06,Why did Mido apologize to the Egyptian national team?,5,5,1.0,1.0,1.0,1.0,5,5,1,1.0,1.0,1,False
+q07,How did the Manchester derby between Manchester City and Manchester United end?,6,6,1.0,1.0,1.0,1.0,6,6,1,1.0,1.0,1,False
+q08,Why doesn't Steven Gerrard believe Liverpool can win the Champions League?,7,"7, 17",1.0,1.0,1.0,1.0,7,"7, 17",1,1.0,1.0,1,False
+q09,How did Chelsea win the Carling Cup final against Liverpool in extra time?,9,"9, 7",1.0,1.0,1.0,1.0,9,"9, 7",1,1.0,1.0,1,False
+q10,How did Newcastle United beat Bolton Wanderers 2-1?,10,10,1.0,1.0,1.0,1.0,10,10,1,1.0,1.0,1,False
+q11,How did Middlesbrough draw 2-2 with Charlton Athletic?,11,11,1.0,1.0,1.0,1.0,11,11,1,1.0,1.0,1,False
+q12,How did Dundee United beat Aberdeen 4-1 in the Scottish Cup?,12,12,1.0,1.0,1.0,1.0,12,"12, 31",1,1.0,1.0,1,True
+q13,How did Celtic beat Clyde 5-0 in the Scottish Cup?,13,13,1.0,1.0,1.0,1.0,13,13,1,1.0,1.0,1,False
+q14,How did Chelsea's Arjen Robben get injured and how long will he be out?,19,"19, 15",1.0,1.0,1.0,1.0,19,"19, 15",1,1.0,1.0,1,False
+q15,What did Rio Ferdinand say about Malcolm Glazer's bid to buy Manchester United?,29,29,1.0,1.0,1.0,1.0,29,29,1,1.0,1.0,1,False
+q16,What are the allegations about Chelsea making an illegal approach for Ashley Cole?,,,,,,,30,30,1,1.0,1.0,1,True
+q17,Why did Dundee United manager Ian McCall get a reprieve from being sacked?,,,,,,,31,31,1,1.0,1.0,1,True
+q18,Why is Harry Kewell's return from injury taking so long?,,,,,,,32,"32, 28",1,1.0,1.0,1,True
+q19,What does Walter Smith want to achieve as the new Scotland manager?,,,,,,,33,"33, 24, 4",1,1.0,1.0,1,True
+q20,Which Wales players are injured before the friendly against Hungary?,,,,,,,34,"34, 24",1,1.0,1.0,1,True

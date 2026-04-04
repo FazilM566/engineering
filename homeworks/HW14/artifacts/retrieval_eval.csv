@@ -1,0 +1,16 @@
+query_id,query,expected_source_doc_ids,retrieved_sources_doc_ids,hit_at_3,recall@3,MRR@3,rank_of_first_relevant
+q01,How did Manchester United beat Everton in the FA Cup?,0,"6, 0",1,1.0,0.5,2
+q02,When will Ruud van Nistelrooy return from his Achilles injury?,1,"1, 19",1,1.0,1.0,1
+q03,Why did David Moyes change his mind about James Beattie's red card for headbutting?,2,2,1,1.0,1.0,1
+q04,What did Cristiano Ronaldo say about his new contract at Manchester United?,3,"3, 17",1,1.0,1.0,1
+q05,Why does Walter Smith want to bring back the Home International series?,4,"4, 24",1,1.0,1.0,1
+q06,Why did Mido apologize to the Egyptian national team?,5,5,1,1.0,1.0,1
+q07,How did the Manchester derby between Manchester City and Manchester United end?,6,6,1,1.0,1.0,1
+q08,Why doesn't Steven Gerrard believe Liverpool can win the Champions League?,7,"7, 17",1,1.0,1.0,1
+q09,How did Chelsea win the Carling Cup final against Liverpool in extra time?,9,"9, 7",1,1.0,1.0,1
+q10,How did Newcastle United beat Bolton Wanderers 2-1?,10,10,1,1.0,1.0,1
+q11,How did Middlesbrough draw 2-2 with Charlton Athletic?,11,11,1,1.0,1.0,1
+q12,How did Dundee United beat Aberdeen 4-1 in the Scottish Cup?,12,12,1,1.0,1.0,1
+q13,How did Celtic beat Clyde 5-0 in the Scottish Cup?,13,13,1,1.0,1.0,1
+q14,How did Chelsea's Arjen Robben get injured and how long will he be out?,19,"19, 15",1,1.0,1.0,1
+q15,What did Rio Ferdinand say about Malcolm Glazer's bid to buy Manchester United?,29,29,1,1.0,1.0,1
