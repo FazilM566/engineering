@@ -1,4 +1,4 @@
-query_id,query,before_expected_source_doc_ids,before_retrieved_sources_doc_ids,before_hit_at_3,before_recall@3,before_MRR@3,before_rank_of_first_relevant,after_expected_source_doc_ids,after_retrieved_sources_doc_ids,after_hit_at_3,after_recall@3,after_MRR@3,after_rank_of_first_relevant,changed
+query_id,query,before_expected_source,before_retrieved_sources,before_hit_at_k,before_recall_at_k,before_MRR_at_k,before_rank_of_first_relevant,after_expected_source,after_retrieved_sources,after_hit_at_k,after_recall_at_k,after_MRR_at_k,after_rank_of_first_relevant,changed
 q01,How did Manchester United beat Everton in the FA Cup?,0,"6, 0",1.0,1.0,0.5,2.0,0,"6, 0",1,1.0,0.5,2,False
 q02,When will Ruud van Nistelrooy return from his Achilles injury?,1,"1, 19",1.0,1.0,1.0,1.0,1,"1, 19",1,1.0,1.0,1,False
 q03,Why did David Moyes change his mind about James Beattie's red card for headbutting?,2,2,1.0,1.0,1.0,1.0,2,2,1,1.0,1.0,1,False

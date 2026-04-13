@@ -1,4 +1,4 @@
-query_id,query,expected_source_doc_ids,retrieved_sources_doc_ids,hit_at_3,recall@3,MRR@3,rank_of_first_relevant
+query_id,query,expected_source,retrieved_sources,hit_at_k,recall_at_k,MRR_at_k,rank_of_first_relevant
 q01,How did Manchester United beat Everton in the FA Cup?,0,"6, 0",1,1.0,0.5,2
 q02,When will Ruud van Nistelrooy return from his Achilles injury?,1,"1, 19",1,1.0,1.0,1
 q03,Why did David Moyes change his mind about James Beattie's red card for headbutting?,2,2,1,1.0,1.0,1
