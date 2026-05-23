@@ -14,7 +14,7 @@ def main():
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--lr-head", type=float, default=1e-3, help="LR для головы")
     parser.add_argument("--lr-ft", type=float, default=1e-4, help="LR для fine-tuning")
-    parser.add_argument("--save", default="artifacts/best_model_full.pth")
+    parser.add_argument("--save", default="artifacts/weights/best_model_full.pth", help="Куда сохранить модель")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
