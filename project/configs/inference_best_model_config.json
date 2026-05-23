@@ -1,0 +1,46 @@
+{
+  "model": {
+    "architecture": {
+      "name": "ResNet50",
+      "input_size": [
+        3,
+        224,
+        224
+      ],
+      "backbone": {
+        "type": "resnet50"
+      },
+      "classifier": {
+        "type": "linear",
+        "input_dim": 2048,
+        "num_classes": 4
+      },
+      "weights_path": "artifacts/best_model_full.pth"
+    },
+    "classes": [
+      "COVID",
+      "Normal",
+      "Lung Opacity",
+      "Viral Pneumonia"
+    ]
+  },
+  "preprocess": {
+    "resize": [
+      224,
+      224
+    ],
+    "normalize": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "to_tensor": true
+  }
+}

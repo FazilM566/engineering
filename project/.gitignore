@@ -21,3 +21,6 @@ env/
 # Системные файлы
 .DS_Store
 Thumbs.db
+
+# Большие файлы весов
+artifacts/weights/*.pth
