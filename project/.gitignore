@@ -1,0 +1,23 @@
+# PyCharm
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Кэш тестов
+.pytest_cache/
+
+# Jupyter checkpoint
+.ipynb_checkpoints/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
