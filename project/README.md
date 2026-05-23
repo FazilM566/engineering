@@ -110,7 +110,7 @@ curl -X POST "http://127.0.0.1:8000/predict" -F "file=@/path/to/chest_xray.jpg"
 - Классы: COVID, Lung opacity, Normal, Viral Pneumonia
 - Размер: ~1.13 ГБ (в распакованном виде)
 - Подготовка: скрипт src.data.prepare разбивает исходные классы на train/val/test в пропорции 70/15/15.
-- В репозитории хранится только инструкция ([data/README.md](data/README.md)), сами данные не включаются в Git.
+- В репозитории хранится только инструкция ([data/data_description.md](data/data_description.md)), сами данные не включаются в Git.
 
 ---
 
