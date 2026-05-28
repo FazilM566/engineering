@@ -1,4 +1,3 @@
-# src/data/prepare.py
 import argparse
 import random
 import shutil
