@@ -33,8 +33,6 @@ def load_model():
         raise FileNotFoundError(f"Model weights not found at {MODEL_PATH}")
 
     state_dict = torch.load(MODEL_PATH, map_location=DEVICE, weights_only=False)
-
-    # 🔧 FIX: Приводим ключи файла к формату модели (добавляем backbone.)
     fixed_state_dict = {
         f"backbone.{k}" if not k.startswith("backbone.") else k: v
         for k, v in state_dict.items()
