@@ -1,4 +1,3 @@
-# src/core.py
 from functools import lru_cache
 import io
 import time

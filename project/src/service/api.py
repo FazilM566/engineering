@@ -1,4 +1,3 @@
-# src/api.py
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from pydantic import BaseModel, Field
 from typing import Dict
@@ -7,7 +6,7 @@ from .core import predict_from_bytes
 app = FastAPI(
     title="Medical X-Ray Classification API",
     version="1.0.0",
-    description="HTTP-сервис для классификации рентгеновских снимков (ResNet-50)",
+    description="HTTP-сервис для классификации рентгеновских снимков",
     docs_url="/docs",
     redoc_url=None,
 )
